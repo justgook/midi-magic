@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta
+            http-equiv="X-UA-Compatible"
+            content="ie=edge"
+    >
+    <title>MIDI Magic</title>
+    <style>
+
+    </style>
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="style.css"
+    >
+    <link
+            type="text/css"
+            rel="stylesheet"
+            href="font/icons.css"
+    >
+</head>
+<body>
+<script src="bundle.js"></script>
+<script>
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+    }
+
+    Elm.Main.init()
+</script>
+</body>
+</html>

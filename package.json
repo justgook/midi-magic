@@ -1,0 +1,10 @@
+{
+  "name": "midi-magic",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "elm-live src/Main.elm --dir=public --open  --hot  -- --output=./public/bundle.js --debug"
+  }
+}
